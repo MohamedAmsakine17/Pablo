@@ -67,8 +67,8 @@ h2 {
   color: #ffda00;
 }
 
-.media:hover {
-  background-color: white;
+.nav-media:hover {
+  color: white;
 }
 
 header {
