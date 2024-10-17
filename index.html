@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="hidden">
         <div class="nav-container">
           <div class="nav-brand">PABLO</div>
           <ul class="navbar">
@@ -38,13 +38,17 @@
       </nav>
       <div class="header-container">
         <div>
-          <div class="title">PABLO</div>
-          <div class="sous-title">
+          <div class="title hidden net1">PABLO</div>
+          <div class="sous-title hidden net2">
             JOIN THE <span class="ylw">CARTEL</span> NOW
           </div>
         </div>
         <div>
-          <img class="header-img" src="./imgs/header-img.png" alt="" />
+          <img
+            class="header-img hidden-right"
+            src="./imgs/header-img.png"
+            alt=""
+          />
         </div>
       </div>
     </header>
@@ -69,13 +73,13 @@
 
     <section class="about">
       <div class="about-left">
-        <div class="pictures-container">
+        <div class="pictures-container hidden">
           <div class="picture1"><div class="about-img-1"></div></div>
           <div class="picture2"><div class="about-img-2"></div></div>
         </div>
       </div>
-      <div class="about-right">
-        <h2>WHO IS <span class="purple">PABLO</span>?</h2>
+      <div class="about-right hidden net2">
+        <h2>WHO IS <span class="white">PABLO</span>?</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
           nulla quibusdam quidem, quod laborum, iste porro esse, beatae earum
@@ -93,10 +97,9 @@
         </div>
       </div>
     </section>
-
     <section class="how-to-buy">
-      <h2>HOW TO BUY?</h2>
-      <div class="how-to-buy-cards-container">
+      <h2 class="hidden">HOW TO BUY?</h2>
+      <div class="how-to-buy-cards-container hidden net2">
         <div class="how-to-buy-card" style="transform: rotate(3deg)">
           <div
             class="card-img"
@@ -131,30 +134,40 @@
           </p>
         </div>
       </div>
-      <div style="margin-top: 80px; text-align: center; font-size: 18px; color: white;">
+      <div
+        class="hidden-bottom"
+        style="
+          margin-top: 80px;
+          text-align: center;
+          font-size: 18px;
+          color: white;
+        "
+      >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       </div>
     </section>
 
     <section class="tokenomics">
-      <div class="tokenomics-left">
+      <div class="tokenomics-left hidden-left">
         <h2>TOKENOMICS</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus,
           voluptatem!
         </p>
         <div class="token-container">
-          <div class="token">LOKDGJSDG5654SDF4F65S4DFSD</div>
-          <div class="copy-button">copy <i class="bi bi-copy"></i></div>
+          <div class="token" id="token">LOKDGJSDG5654SDF4F65S4DFSD</div>
+          <div class="copy-button" id="copy-button" onclick="copyContent()">
+            copy <i class="bi bi-copy"></i>
+          </div>
         </div>
       </div>
-      <div class="tokenomics-right">
+      <div class="tokenomics-right hidden-right">
         <div class="tokenomics-img"></div>
       </div>
     </section>
 
     <section class="media">
-      <div class="media-container">
+      <div class="media-container hidden-bottom">
         <div class="left-content">
           <h2>JOIN THE COMMUNITY</h2>
           <p>
@@ -194,7 +207,9 @@
       </div>
     </section>
 
-    <footer>© 2024 by PABLO. All rights reserved!</footer>
+    <footer>
+      <span class="hidden">© 2024 by PABLO. All rights reserved!</span>
+    </footer>
 
     <script src="script.js"></script>
   </body>

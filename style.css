@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ylw {
   color: #ffda00;
 }
@@ -36,6 +40,7 @@ h2 {
 .navbar {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .social-media {
@@ -76,6 +81,7 @@ header {
   height: 100vh;
   background-color: #3590f7;
   position: relative;
+  overflow: hidden;
 }
 
 .header-container {
@@ -105,19 +111,20 @@ header {
 
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 220px 180px 220px 320px;
+  padding: 220px 0;
   background-color: #ffda00;
 }
 
 .about-right {
-  width: 820px;
+  width: 675px;
   font-family: "Anton", sans-serif;
+  margin-left: 200px;
 }
 
 .about-right p {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .pictures-container {
@@ -224,6 +231,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #ffda00;
+  overflow: hidden;
 }
 
 .tokenomics-img {
@@ -277,6 +285,7 @@ header {
 .media {
   padding: 160px 0;
   background-color: #3590f7;
+  overflow: hidden;
 }
 
 .media-container {
@@ -306,6 +315,7 @@ header {
 }
 
 .socials-media-list li a {
+  color: #100c0c;
   margin-right: 20px;
   font-size: 25px;
   background-color: white;
@@ -373,6 +383,570 @@ footer {
   }
 }
 
-.purple {
+.white {
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1600px) {
+  .header-img {
+    width: 700px;
+  }
+
+  .title {
+    font-size: 250px;
+  }
+
+  .sous-title {
+    font-size: 50px;
+  }
+
+  .picture1 {
+    width: 350px;
+    height: 450px;
+  }
+
+  .about-img-1 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-right {
+    margin-left: 160px;
+  }
+
+  .how-to-buy-card {
+    width: 375px;
+  }
+
+  .card-img {
+    width: 375px;
+    height: 325px;
+  }
+
+  .tokenomics {
+    padding: 160px 50px;
+  }
+
+  .tokenomics-left p {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .header-img {
+    width: 625px;
+  }
+
+  .title {
+    font-size: 225px;
+  }
+
+  .sous-title {
+    font-size: 45px;
+  }
+
+  .about-right {
+    margin-left: 125px;
+    width: 500px;
+  }
+
+  .how-to-buy-card {
+    width: 350px;
+    margin: 0 20px;
+  }
+
+  .card-img {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-img {
+    width: 575px;
+  }
+
+  .title {
+    font-size: 185px;
+  }
+
+  .sous-title {
+    font-size: 40px;
+  }
+
+  .picture1 {
+    width: 325px;
+    height: 400px;
+  }
+
+  .about-img-1 {
+    width: 325px;
+    height: 325px;
+  }
+
+  .picture2 {
+    width: 300px;
+    height: 350px;
+    top: 25px;
+  }
+
+  .about-img-2 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-right {
+    margin-left: 100px;
+    width: 450px;
+  }
+
+  .about-right p {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .how-to-buy-cards-container {
+    flex-direction: column;
+  }
+
+  .how-to-buy-card {
+    width: 400px;
+    margin: 40px 0px;
+  }
+
+  .card-img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .tokenomics-left p {
+    width: 500px;
+  }
+
+  .tokenomics-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .media-container .left-content {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-container {
+    padding: 20px 10px;
+    width: 90%;
+  }
+
+  .nav-brand {
+    font-size: 32px;
+  }
+
+  .nav-link {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+
+  .nav-media {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .header-img {
+    width: 500px;
+    z-index: 1;
+  }
+
+  .title,
+  .sous-title {
+    position: relative;
+    z-index: 2;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+
+  .about-right {
+    margin: 50px 0;
+  }
+
+  .tokenomics {
+    padding: 120px 50px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tokenomics-img {
+    margin-top: 60px;
+  }
+
+  .tokenomics-left h2 {
+    margin-top: 0;
+  }
+
+  .media-container .left-content {
+    width: 400px;
+    padding: 20px 20px 0;
+  }
+
+  .media-container .left-content h2 {
+    font-size: 35px;
+  }
+
+  .media-container .left-content p {
+    font-size: 18;
+  }
+
+  .socials-media-list li a.buy-pablo {
+    font-size: 18px;
+  }
+
+  .socials-media-list li a {
+    margin-right: 16px;
+    padding: 2.5px 5px;
+  }
+
+  .media-img-container img {
+    width: 200px;
+  }
+
+  .socials-media-icon {
+    width: 30px;
+  }
+
+  .media-container {
+    align-items: end;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-container {
+    padding: 20px 5px;
+    width: 95%;
+  }
+
+  .title {
+    font-size: 150px;
+  }
+
+  .nav-brand {
+    font-size: 30px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  .nav-media {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .how-to-buy {
+    background-color: #3590f7;
+    padding: 120px 0;
+  }
+
+  .tokenomics-left {
+    width: 95%;
+  }
+
+  .tokenomics-left p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .tokenomics-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .token {
+    font-size: 17px;
+  }
+
+  .media-container {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    border: 3px solid #100c0c;
+  }
+
+  .media-container .left-content {
+    width: 100%;
+    padding: 40px 0px 0;
+  }
+
+  .socials-media-list {
+    width: fit-content;
+    margin: 40px auto;
+  }
+
+  .media-img-container {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .header-img {
+    width: 450px;
+    z-index: 1;
+  }
+
+  .nav-brand {
+    font-size: 45px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .nav-media {
+    font-size: 30px;
+    margin: 0 5px;
+  }
+
+  .about {
+    overflow: hidden;
+  }
+
+  .picture1 {
+    width: 285px;
+    height: 350px;
+  }
+
+  .about-img-1 {
+    width: 285px;
+    height: 285px;
+  }
+
+  .picture2 {
+    width: 250px;
+    height: 325px;
+  }
+
+  .about-img-2 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-right {
+    width: 100%;
+  }
+
+  .about-right p {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .about-link {
+    margin: 0 10px;
+  }
+
+  .how-to-buy-card {
+    width: 85%;
+    margin: 30px 0px;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 275px;
+  }
+
+  .how-to-buy-card p {
+    padding: 0 10px;
+  }
+
+  .tokenomics {
+    padding: 100px 20px;
+  }
+
+  .tokenomics-left {
+    width: 100%;
+  }
+
+  .token {
+    font-size: 14px;
+  }
+
+  .media-container {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    border: 3px solid #100c0c;
+  }
+
+  .media-container .left-content {
+    width: 98%;
+    margin: auto;
+  }
+
+  .socials-media-list li a.buy-pablo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title {
+    font-size: 120px;
+  }
+
+  .sous-title {
+    font-size: 30px;
+  }
+
+  .header-img {
+    width: 300px;
+  }
+
+  .token {
+    font-size: 12px;
+  }
+}
+
+/*
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+*/
+
+/* Animations */
+
+.hidden {
+  opacity: 0;
+  transform: scale(0);
+  filter: blur(5px);
+  transition: opacity 1s, filter 1s;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 1s;
+  }
+}
+
+.show {
+  filter: blur(0);
+  opacity: 1;
+  animation: bounceIn 0.5s ease-out forwards; /* Bouncing animation on show */
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hidden from different directions */
+.hidden-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hidden-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hidden-top {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.hidden-bottom {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+/* Show for different directions */
+.show-left {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.show-right {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.show-top {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.show-bottom {
+  transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.net1 {
+  transition-delay: 200ms;
+}
+.net2 {
+  transition-delay: 400ms;
+}
+.net3 {
+  transition-delay: 600ms;
+}
+.net4 {
+  transition-delay: 800ms;
+}
+.net5 {
+  transition-delay: 1000ms;
+}
+.net6 {
+  transition-delay: 1200ms;
+}
+
+.net7 {
+  transition-delay: 1400ms;
 }
